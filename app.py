@@ -127,7 +127,7 @@ class App:
 
         # Create clickable labels for each creator
         for name, link in creators.items():
-            link_label = tk.Label(footer_content, text=name, bg="#0080FF", fg="blue", font=("Arial", 10, "italic", "underline"), cursor="hand2")
+            link_label = tk.Label(footer_content, text=name, bg="#0080FF", fg="white", font=("Arial", 10, "italic", "underline"), cursor="hand2")
             link_label.pack(side=tk.LEFT, padx=5)
             link_label.bind("<Button-1>", lambda e, url=link: self.open_github(url))
 
