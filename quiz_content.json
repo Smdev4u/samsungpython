@@ -1,0 +1,97 @@
+[
+  {
+    "question": "Quelle est la sortie de `print(2 ** 3)` en Python?",
+    "options": ["5", "6", "8", "9"],
+    "answer": "8"
+  },
+  {
+    "question": "Quel est le type de données de `5.0` en Python?",
+    "options": ["int", "str", "float", "bool"],
+    "answer": "float"
+  },
+  {
+    "question": "Quelle méthode ajoute un élément à la fin d'une liste en Python?",
+    "options": ["append()", "add()", "insert()", "extend()"],
+    "answer": "append()"
+  },
+  {
+    "question": "Quelle est la sortie de `print('Bonjour' + ' tout le monde')`?",
+    "options": [
+      "Bonjour tout le monde",
+      "Bonjours tout le monde",
+      "Erreur",
+      "Bonjour, tout le monde"
+    ],
+    "answer": "Bonjour tout le monde"
+  },
+  {
+    "question": "Que signifie POO en Python?",
+    "options": [
+      "Programmation Oblique Objet",
+      "Programmation Orientée Objet",
+      "Processus d'Objet Officiel",
+      "Programmation Objet Orienté"
+    ],
+    "answer": "Programmation Orientée Objet"
+  },
+  {
+    "question": "Quelle fonction est utilisée pour obtenir l'entrée utilisateur en Python?",
+    "options": ["input()", "get()", "read()", "scan()"],
+    "answer": "input()"
+  },
+  {
+    "question": "Comment est déclarée une fonction en Python?",
+    "options": [
+      "function maFonction():",
+      "def maFonction():",
+      "declare maFonction():",
+      "create maFonction():"
+    ],
+    "answer": "def maFonction():"
+  },
+  {
+    "question": "Quelle est la sortie de `print(type('Python'))`?",
+    "options": ["int", "float", "str", "list"],
+    "answer": "str"
+  },
+  {
+    "question": "Que fait l'opérateur `//` en Python?",
+    "options": [
+      "Division entière",
+      "Division flottante",
+      "Multiplication",
+      "Modulo"
+    ],
+    "answer": "Division entière"
+  },
+  {
+    "question": "Quelle est la valeur de `5 % 2`?",
+    "options": ["0", "1", "2", "5"],
+    "answer": "1"
+  },
+  {
+    "question": "Quelle méthode convertit une chaîne en majuscules?",
+    "options": ["toUpperCase()", "convertUpper()", "upper()", "uppercase()"],
+    "answer": "upper()"
+  },
+  {
+    "question": "Quelle est la sortie de `print(len('Python'))`?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6"
+  },
+  {
+    "question": "Quelle bibliothèque est utilisée pour créer des interfaces graphiques en Python?",
+    "options": ["tkinter", "pygame", "pandas", "matplotlib"],
+    "answer": "tkinter"
+  },
+  {
+    "question": "Quelle fonction retourne la longueur d'une liste?",
+    "options": ["length()", "len()", "size()", "count()"],
+    "answer": "len()"
+  },
+  {
+    "question": "Comment accéder au premier élément d'une liste nommée `maListe`?",
+    "options": ["maListe[0]", "maListe(1)", "maListe[1]", "maListe.first()"],
+    "answer": "maListe[0]"
+  }
+]

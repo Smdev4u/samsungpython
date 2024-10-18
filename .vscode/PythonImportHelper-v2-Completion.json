@@ -1,0 +1,108 @@
+[
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "scrolledtext",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "TopicsManager",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class TopicsManager:\n    def __init__(self, filepath):\n        self.filepath = filepath\n        self.topics = self.load_topics()\n    def load_topics(self):\n        try:\n            with open(self.filepath, 'r', encoding='utf-8') as file:\n                return json.load(file)\n        except FileNotFoundError:\n            messagebox.showerror(\"Erreur\", \"Le fichier de sujets est introuvable.\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class App:\n    def __init__(self, root, topics_manager):\n        self.root = root\n        self.root.title(\"Samsung Innovation Campus - Apprentissage Python\")\n        self.root.geometry(\"1100x670\")\n        self.root.rowconfigure(1, weight=1)  \n        self.root.columnconfigure(1, weight=1)\n        self.quiz_content = self.load_quiz_content(quizpath)\n        self.user_answers = [\"\"] * len(self.quiz_content)\n        self.quiz_index = 0",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "BASE_DIR = os.path.dirname(sys.executable) if getattr(sys, 'frozen', False) else os.path.dirname(__file__)\n# Chemin vers les fichiers JSON\nfilepath = os.path.join(BASE_DIR, 'topics.json')\nquizpath = os.path.join(BASE_DIR, 'quiz_content.json')\nclass TopicsManager:\n    def __init__(self, filepath):\n        self.filepath = filepath\n        self.topics = self.load_topics()\n    def load_topics(self):\n        try:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "filepath",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "filepath = os.path.join(BASE_DIR, 'topics.json')\nquizpath = os.path.join(BASE_DIR, 'quiz_content.json')\nclass TopicsManager:\n    def __init__(self, filepath):\n        self.filepath = filepath\n        self.topics = self.load_topics()\n    def load_topics(self):\n        try:\n            with open(self.filepath, 'r', encoding='utf-8') as file:\n                return json.load(file)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "quizpath",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "quizpath = os.path.join(BASE_DIR, 'quiz_content.json')\nclass TopicsManager:\n    def __init__(self, filepath):\n        self.filepath = filepath\n        self.topics = self.load_topics()\n    def load_topics(self):\n        try:\n            with open(self.filepath, 'r', encoding='utf-8') as file:\n                return json.load(file)\n        except FileNotFoundError:",
+        "detail": "app",
+        "documentation": {}
+    }
+]
