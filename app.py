@@ -4,7 +4,7 @@ import json
 import sys
 import io
 import os
-
+import webbrowser  # Import pour ouvrir les liens web
 # Obtenez le répertoire du fichier exécutable
 BASE_DIR = os.path.dirname(sys.executable) if getattr(sys, 'frozen', False) else os.path.dirname(__file__)
 # Chemin vers les fichiers JSON
@@ -109,8 +109,30 @@ class App:
         # Footer setup, fixed at the bottom
         footer = tk.Frame(self.root, bg="#0080FF", height=30)
         footer.grid(row=2, column=0, columnspan=2, sticky="ew")
-        footer_label = tk.Label(footer, text="Created By SMDEV & KYDEV & ", bg="#0080FF", fg="white", font=("Arial", 10, "italic"))
-        footer_label.pack(pady=5)
+
+        # Frame to hold both the "Created by" text and the creator links in the center
+        footer_content = tk.Frame(footer, bg="#0080FF")
+        footer_content.pack(anchor="center")
+
+        # "Created by" text
+        footer_text_label = tk.Label(footer_content, text="Created by ", bg="#0080FF", fg="white", font=("Arial", 10, "italic"))
+        footer_text_label.pack(side=tk.LEFT, padx=5)
+
+        # Creators dictionary with GitHub links
+        creators = {
+            "SMDEV": "https://github.com/SMDEV4U",
+            "KYDEV": "https://github.com/KYASSDEV",
+            "LIDEV": "https://github.com/LABBIHI"
+        }
+
+        # Create clickable labels for each creator
+        for name, link in creators.items():
+            link_label = tk.Label(footer_content, text=name, bg="#0080FF", fg="blue", font=("Arial", 10, "italic", "underline"), cursor="hand2")
+            link_label.pack(side=tk.LEFT, padx=5)
+            link_label.bind("<Button-1>", lambda e, url=link: self.open_github(url))
+
+    def open_github(self, url):
+        webbrowser.open_new(url)
 
     def load_quiz_content(self, filepath):
         try:

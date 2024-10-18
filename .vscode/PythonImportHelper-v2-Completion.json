@@ -61,6 +61,15 @@
         "documentation": {}
     },
     {
+        "label": "webbrowser",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "webbrowser",
+        "description": "webbrowser",
+        "detail": "webbrowser",
+        "documentation": {}
+    },
+    {
         "label": "TopicsManager",
         "kind": 6,
         "importPath": "app",
