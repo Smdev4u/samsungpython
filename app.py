@@ -5,6 +5,7 @@ import sys
 import io
 import os
 import webbrowser  # Import pour ouvrir les liens web
+
 # Obtenez le répertoire du fichier exécutable
 BASE_DIR = os.path.dirname(sys.executable) if getattr(sys, 'frozen', False) else os.path.dirname(__file__)
 # Chemin vers les fichiers JSON
