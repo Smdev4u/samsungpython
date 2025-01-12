@@ -5,9 +5,9 @@ from mysql.connector import Error
 def create_connection():
     try:
         connection = mysql.connector.connect(
-            host="161.97.173.168",
-            user="forge",  # Replace with your MySQL username
-            password="djs6tqbPdZuStprJF09d",  # Replace with your MySQL password
+            host="localhost",
+            user="root",  # Replace with your MySQL username
+            password="",  # Replace with your MySQL password
             database="pylearningdb"
         )
         cursor = connection.cursor()
